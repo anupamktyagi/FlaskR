@@ -3,9 +3,10 @@ This script runs the FlaskR application using a development server.
 """
 
 from os import environ
-from FlaskR import app
+from FlaskR import create_app
 
 if __name__ == '__main__':
+    app = create_app()
     HOST = environ.get('SERVER_HOST', 'localhost')
     try:
         PORT = int(environ.get('SERVER_PORT', '5555'))

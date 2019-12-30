@@ -28,6 +28,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FlaskR\db.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="FlaskR\__init__.py" />
     <Compile Include="FlaskR\views.py" />
@@ -41,6 +44,7 @@
     <Folder Include="FlaskR\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FlaskR\schema.sql" />
     <Content Include="requirements.txt" />
     <Content Include="FlaskR\static\content\bootstrap.css" />
     <Content Include="FlaskR\static\content\bootstrap.min.css" />
