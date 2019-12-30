@@ -338,3 +338,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# Virtual env
+/FlaskR/env
+/FlaskR/venv
