@@ -28,6 +28,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FlaskR\auth.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskR\blog.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="FlaskR\db.py">
       <SubType>Code</SubType>
     </Compile>
@@ -42,9 +48,18 @@
     <Folder Include="FlaskR\static\fonts\" />
     <Folder Include="FlaskR\static\scripts\" />
     <Folder Include="FlaskR\templates\" />
+    <Folder Include="FlaskR\templates\auth\" />
+    <Folder Include="FlaskR\templates\blog\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FlaskR\schema.sql" />
+    <Content Include="FlaskR\static\style.css" />
+    <Content Include="FlaskR\templates\auth\login.html" />
+    <Content Include="FlaskR\templates\auth\register.html" />
+    <Content Include="FlaskR\templates\base.html" />
+    <Content Include="FlaskR\templates\blog\create.html" />
+    <Content Include="FlaskR\templates\blog\index.html" />
+    <Content Include="FlaskR\templates\blog\update.html" />
     <Content Include="requirements.txt" />
     <Content Include="FlaskR\static\content\bootstrap.css" />
     <Content Include="FlaskR\static\content\bootstrap.min.css" />
